@@ -1,6 +1,8 @@
 const AuthService = require("../services/authServices");
 const catchAsync = require("../utils/catchAsync");
 //auth controller ready for another udpates.
+//user name fixed
+
 class AuthController {
   static register = catchAsync(async (req, res, next) => {
     const data = await AuthService.register(req, res, next);
